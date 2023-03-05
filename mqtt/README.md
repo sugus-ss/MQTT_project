@@ -40,6 +40,6 @@ python subscriber.py
 2. Run the publisher file by typing "python publisher.py" in the terminal and pressing enter. 
 ``` bash
 python publisher.py
-
+```
 
 
