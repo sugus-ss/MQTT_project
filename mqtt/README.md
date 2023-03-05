@@ -36,7 +36,7 @@ An example of a file for receiving and sending data.
   ``` bash
 python Create_db.py.py
 ```
-3. Run the subscriber file by typing "python subscriber.py" in the terminal and pressing enter. 
+2. Run the subscriber file by typing "python subscriber.py" in the terminal and pressing enter. 
 ``` bash
 python subscriber.py
 ```
