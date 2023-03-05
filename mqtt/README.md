@@ -32,12 +32,15 @@ Manages the SQLite database which receives JSON data and inserts it into the tab
 An example of a file for receiving and sending data.
 
 ## How to run
-
-1. Run the subscriber file by typing "python subscriber.py" in the terminal and pressing enter. 
+1. Initialize database
+  ``` bash
+python Create_db.py.py
+```
+3. Run the subscriber file by typing "python subscriber.py" in the terminal and pressing enter. 
 ``` bash
 python subscriber.py
 ```
-2. Run the publisher file by typing "python publisher.py" in the terminal and pressing enter. 
+3. Run the publisher file by typing "python publisher.py" in the terminal and pressing enter. 
 ``` bash
 python publisher.py
 ```
