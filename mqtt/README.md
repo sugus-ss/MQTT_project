@@ -14,15 +14,14 @@ C -- Insert --> D(SQLite)
 ```
 
 ## Consists of 3 entities
-
-- **Client**: Publisher and Subscriber
-- **Broker**: Mosquitto and Paho
-- **Server**: SQLite
+- **Client**: Client can read sensor data stored in an Excel file and sends to Broker.
+- **Broker**: Broker forwards any data it receives to its subscribers using Mosquitto and Paho
+- **Server**: Subscribes for data from Client and save into SQLite
 
 
 ## Files
 - **publisher.py:** 
-Client connects to an MQTT broker and publishes messages to a specified topic. It also reads data from an Excel file, converts it to a JSON format, and publishes the JSON data.
+Client connects to an MQTT broker and publishes messages to a specified topic. It also reads data from an Excel file, converts it to a JSON string format, and publishe the data.
 - **subscriber.py:** 
 Client subscribes to an MQTT broker, receives messages, and saves data into a database.
 - **create_db.py:** 
