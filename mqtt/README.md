@@ -34,7 +34,7 @@ An example of a file for receiving and sending data.
 ## How to run
 1. Initialize database
   ``` bash
-python Create_db.py.py
+python Create_db.py
 ```
 2. Run the subscriber file by typing "python subscriber.py" in the terminal and pressing enter. 
 ``` bash
