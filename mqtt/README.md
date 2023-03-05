@@ -1,6 +1,6 @@
 # MQTT project
 
-The MQTT project repository is an example of how to use MQTT protocol in Python using the Paho MQTT client library. It provides scripts for publishing and subscribing to messages on an MQTT broker.
+The MQTT project repository is an example of how to use MQTT protocol in Python using the Paho MQTT client library. It provides scripts for publishing and subscribing to messages on an MQTT broker and save data into database.
 
 
 ## Files
