@@ -30,6 +30,6 @@ graph LR
 A[Publisher] -- Publish --> B(Mosquitto)
 C -- Subscribe --> B(Mosquitto)
 B -- Publish --> C(Subscriber)
-C -- insert --> D(SQLite)
+C -- Insert --> D(SQLite)
 
 ```
