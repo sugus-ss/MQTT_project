@@ -2,6 +2,23 @@
 
 The MQTT project repository is an example of how to use MQTT protocol in Python using the Paho MQTT client library. It provides scripts for publishing and subscribing to messages on an MQTT broker and save data into database.
 
+## System
+
+```mermaid
+graph LR
+A[Publisher] -- Publish --> B(Mosquitto)
+C -- Subscribe --> B(Mosquitto)
+B -- Publish --> C(Subscriber)
+C -- Insert --> D(SQLite)
+
+```
+
+## Consists of 3 entities
+
+- **Client**: Publisher and Subscriber
+- **Broker**: Mosquitto and Paho
+- **Server**: SQLite
+
 
 ## Files
 - **publisher.py:** 
@@ -16,20 +33,6 @@ Manages the SQLite database which receives JSON data and inserts it into the tab
 An example of a file for receiving and sending data.
 
 
-## Consists of 3 entities
-
-- **Client**: Publisher and Subscriber
-- **Broker**: Mosquitto and Paho
-- **Server**: SQLite
 
 
-## System
 
-```mermaid
-graph LR
-A[Publisher] -- Publish --> B(Mosquitto)
-C -- Subscribe --> B(Mosquitto)
-B -- Publish --> C(Subscriber)
-C -- Insert --> D(SQLite)
-
-```
